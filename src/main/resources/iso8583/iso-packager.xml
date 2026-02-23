@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE isopackager SYSTEM "genericpackager.dtd">
+
+<isopackager>
+    <!-- MTI -->
+    <field id="0" length="4" name="Message Type Indicator" class="org.jpos.iso.IFA_ASCII"/>
+    
+    <!-- Primary Fields -->
+    <field id="1" length="16" name="Bitmap" class="org.jpos.iso.IFA_BITMAP"/>
+    <field id="2" length="19" name="PAN" class="org.jpos.iso.IF_LLCHAR"/>
+    <field id="3" length="6" name="Processing Code" class="org.jpos.iso.IF_CHAR"/>
+    <field id="4" length="12" name="Amount" class="org.jpos.iso.IF_CHAR"/>
+    <field id="5" length="12" name="Settlement Amount" class="org.jpos.iso.IF_CHAR"/>
+    <field id="6" length="12" name="Cardholder Billing Amount" class="org.jpos.iso.IF_CHAR"/>
+    <field id="7" length="10" name="Transmission Date/Time" class="org.jpos.iso.IF_CHAR"/>
+    <field id="8" length="8" name="Cardholder Billing Fee" class="org.jpos.iso.IF_CHAR"/>
+    <field id="9" length="8" name="Settlement Conversion Rate" class="org.jpos.iso.IF_CHAR"/>
+    <field id="10" length="8" name="Cardholder Billing Conversion Rate" class="org.jpos.iso.IF_CHAR"/>
+    <field id="11" length="6" name="STAN" class="org.jpos.iso.IF_CHAR"/>
+    <field id="12" length="6" name="Local Time" class="org.jpos.iso.IF_CHAR"/>
+    <field id="13" length="4" name="Local Date" class="org.jpos.iso.IF_CHAR"/>
+    <field id="14" length="4" name="Expiration Date" class="org.jpos.iso.IF_CHAR"/>
+    <field id="15" length="4" name="Settlement Date" class="org.jpos.iso.IF_CHAR"/>
+    <field id="16" length="4" name="Currency Conversion Date" class="org.jpos.iso.IF_CHAR"/>
+    <field id="17" length="4" name="Capture Date" class="org.jpos.iso.IF_CHAR"/>
+    <field id="18" length="4" name="Merchant Category Code" class="org.jpos.iso.IF_CHAR"/>
+    <field id="19" length="3" name="Acquiring Institution Country" class="org.jpos.iso.IF_CHAR"/>
+    <field id="20" length="3" name="PAN Extended Country" class="org.jpos.iso.IF_CHAR"/>
+    <field id="21" length="3" name="Forwarding Institution Country" class="org.jpos.iso.IF_CHAR"/>
+    <field id="22" length="3" name="POS Entry Mode" class="org.jpos.iso.IF_CHAR"/>
+    <field id="23" length="3" name="Card Sequence Number" class="org.jpos.iso.IF_CHAR"/>
+    <field id="24" length="3" name="Function Code" class="org.jpos.iso.IF_CHAR"/>
+    <field id="25" length="2" name="POS Condition Code" class="org.jpos.iso.IF_CHAR"/>
+    <field id="26" length="2" name="POS PIN Capture Code" class="org.jpos.iso.IF_CHAR"/>
+    <field id="27" length="1" name="Authorization Response Length" class="org.jpos.iso.IF_CHAR"/>
+    <field id="28" length="9" name="Amount Transaction Fee" class="org.jpos.iso.IF_CHAR"/>
+    <field id="29" length="9" name="Amount Settlement Fee" class="org.jpos.iso.IF_CHAR"/>
+    <field id="30" length="9" name="Amount Processing Fee" class="org.jpos.iso.IF_CHAR"/>
+    <field id="31" length="9" name="Amount Settlement" class="org.jpos.iso.IF_CHAR"/>
+    <field id="32" length="11" name="Acquiring Institution" class="org.jpos.iso.IF_LLCHAR"/>
+    <field id="33" length="11" name="Forwarding Institution" class="org.jpos.iso.IF_LLCHAR"/>
+    <field id="34" length="28" name="PAN Extended" class="org.jpos.iso.IF_LLCHAR"/>
+    <field id="35" length="37" name="Track 2 Data" class="org.jpos.iso.IF_LLCHAR"/>
+    <field id="36" length="104" name="Track 3 Data" class="org.jpos.iso.IF_LLLCHAR"/>
+    <field id="37" length="12" name="RRN" class="org.jpos.iso.IF_CHAR"/>
+    <field id="38" length="6" name="Authorization Code" class="org.jpos.iso.IF_CHAR"/>
+    <field id="39" length="2" name="Response Code" class="org.jpos.iso.IF_CHAR"/>
+    <field id="40" length="3" name="Service Restriction Code" class="org.jpos.iso.IF_CHAR"/>
+    <field id="41" length="8" name="Terminal ID" class="org.jpos.iso.IF_CHAR"/>
+    <field id="42" length="15" name="Merchant ID" class="org.jpos.iso.IF_CHAR"/>
+    <field id="43" length="40" name="Merchant Name/Location" class="org.jpos.iso.IF_CHAR"/>
+    <field id="44" length="25" name="Additional Response Data" class="org.jpos.iso.IF_LLCHAR"/>
+    <field id="45" length="76" name="Track 1 Data" class="org.jpos.iso.IF_LLCHAR"/>
+    <field id="46" length="999" name="Additional Data - ISO" class="org.jpos.iso.IF_LLLCHAR"/>
+    <field id="47" length="999" name="Additional Data - National" class="org.jpos.iso.IF_LLLCHAR"/>
+    <field id="48" length="999" name="Additional Data - Private" class="org.jpos.iso.IF_LLLCHAR"/>
+    <field id="49" length="3" name="Currency Code" class="org.jpos.iso.IF_CHAR"/>
+    <field id="50" length="3" name="Currency Code Settlement" class="org.jpos.iso.IF_CHAR"/>
+    <field id="51" length="3" name="Currency Code Cardholder Billing" class="org.jpos.iso.IF_CHAR"/>
+    <field id="52" length="64" name="PIN Data" class="org.jpos.iso.IF_BINARY"/>
+    <field id="53" length="16" name="Security Control" class="org.jpos.iso.IF_CHAR"/>
+    <field id="54" length="120" name="Additional Amounts" class="org.jpos.iso.IF_LLLCHAR"/>
+    <field id="55" length="999" name="ICC Data" class="org.jpos.iso.IF_LLLCHAR"/>
+    <field id="56" length="999" name="Reserved ISO" class="org.jpos.iso.IF_LLLCHAR"/>
+    <field id="57" length="999" name="Reserved National" class="org.jpos.iso.IF_LLLCHAR"/>
+    <field id="58" length="999" name="Reserved National" class="org.jpos.iso.IF_LLLCHAR"/>
+    <field id="59" length="999" name="Reserved National" class="org.jpos.iso.IF_LLLCHAR"/>
+    <field id="60" length="999" name="Reserved Private" class="org.jpos.iso.IF_LLLCHAR"/>
+    <field id="61" length="999" name="Reserved Private" class="org.jpos.iso.IF_LLLCHAR"/>
+    <field id="62" length="999" name="Reserved Private" class="org.jpos.iso.IF_LLLCHAR"/>
+    <field id="63" length="999" name="Reserved Private" class="org.jpos.iso.IF_LLLCHAR"/>
+    <field id="64" length="16" name="MAC" class="org.jpos.iso.IF_BINARY"/>
+</isopackager>
