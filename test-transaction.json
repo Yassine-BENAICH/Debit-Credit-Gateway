@@ -1,0 +1,8 @@
+{
+  "cardNumber": "1234567890123456",
+  "expiryDate": "1225",
+  "cvv": "123",
+  "amount": 100.50,
+  "currency": "840",
+  "transactionReference": "REF-123456"
+}
