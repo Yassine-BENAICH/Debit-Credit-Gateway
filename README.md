@@ -29,7 +29,7 @@ The project is designed as a reference implementation or starting point for buil
 - **Framework:** Spring Boot 2.7.x
 - **Messaging:** ISO 8583 via jPOS
 - **Build Tool:** Maven
-- **Database (optional):** PostgreSQL (configured, but persistence logic is not implemented in this repo)
+- **Database :** Oracle
 - **Logging:** Log4j2
 
 ---
@@ -40,7 +40,7 @@ The project is designed as a reference implementation or starting point for buil
 
 - Java Development Kit (JDK) 21 installed and on your PATH
 - Maven 3.6+ installed
-- (Optional) PostgreSQL instance if you plan to use the configured datasource
+- Oracle
   - Default URL: `jdbc:postgresql://localhost:5432/gateway`
   - Default credentials: `Admin` / `Admin123`
 - An ISO 8583 host or simulator reachable over TCP (default `127.0.0.1:5000`)
@@ -92,8 +92,7 @@ server:
   port: 8080
 ```
 
-### Database (Optional)
-
+### Database 
 ```yaml
 spring:
   datasource:
